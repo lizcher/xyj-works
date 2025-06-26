@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XYJ作品集</title>
+  <style>
+    :root {
+      --gray: #f4f4f4;
+      --deep-purple: #5c4d7d;
+      --soft-purple: #a892d3;
+      --soft-green: #b1d6c5;
+      --text-dark: #2e2e2e;
+      --text-light: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, sans-serif;
+      background-color: var(--gray);
+      color: var(--text-dark);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--soft-purple), var(--soft-green));
+      padding: 3rem 1rem;
+      text-align: center;
+      color: var(--text-light);
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      color: var(--deep-purple);
+      border-bottom: 2px solid var(--soft-green);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .portfolio-item {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .media-container {
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      position: relative;
+      background: #000;
+    }
+
+    .media-container iframe,
+    .media-container img {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      object-fit: cover;
+    }
+
+    .portfolio-content {
+      padding: 1.5rem;
+    }
+
+    .portfolio-content h3 {
+      margin-top: 0;
+      color: var(--deep-purple);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background-color: var(--soft-green);
+      color: var(--text-dark);
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    footer {
+      background: var(--deep-purple);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VANZHI · 动效与文案策划作品集</h1>
+  </header>
+  <div class="container">
+
+    <!-- 动画作品 -->
+    <section>
+      <h2 class="section-title">动画作品</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="media-container">
+            <iframe src="https://player.bilibili.com/player.html?bvid=BV1LYKfz4EZt&page=1" allowfullscreen="true"></iframe>
+          </div>
+          <div class="portfolio-content">
+            <h3>《江山古寺》</h3>
+            <p>设计灵感源于中国古建筑与国画山水构图，红墙青瓦、庙宇藏山林，营造宁静氛围。</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="media-container">
+            <iframe src="https://player.bilibili.com/player.html?bvid=BV1jhKfzZE9z&page=1" allowfullscreen="true"></iframe>
+          </div>
+          <div class="portfolio-content">
+            <h3>《寻新之路》</h3>
+            <p>讲述飞船迫降异星后的探索故事，展现未知世界与前人遗迹的交汇之旅。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 特效图片 -->
+   <section>
+  <h2 class="section-title">特效作品</h2>
+  <div class="portfolio-grid">
+    <div class="portfolio-item">
+      <img src="https://i.imgs.ovh/2025/06/26/Ri779.jpeg" alt="特效展示图" style="width:100%; display:block;">
+      <div class="portfolio-content">
+        <h3>特效作品合集</h3>
+        <p>粒子、燃烧、风格化转场等动效实验展示合集。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- 策划文案 -->
+    <section>
+      <h2 class="section-title">策划文案</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-content">
+            <h3>盘锦互动视频文案</h3>
+            <p>包含分支剧情、角色台词与视觉设定，搭配演示视频展示整体构思。</p>
+            <a class="btn" href="https://pan.baidu.com/s/1NTqpwUqu4PHSGgnUCfpWxA?pwd=bmwa" target="_blank">查看策划文案</a>
+            <a class="btn" href="https://pan.baidu.com/s/1N1fPwMEMbyAPaM6DE2lx7w?pwd=qyi8" target="_blank" style="margin-left: 10px;">观看演示视频</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-content">
+            <h3>东软新生广播栏目文案</h3>
+            <p>独立撰写的实际需求向文本构建方案，结合学生对象行为设计内容引导。</p>
+            <a class="btn" href="https://pan.baidu.com/s/1QrMmyPYsuO31g3GlQrMMqA?pwd=s2wh" target="_blank">查看策划文案</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 VANZHI | xieyanjia888@foxmail.com</p>
+  </footer>
+</body>
+</html>
